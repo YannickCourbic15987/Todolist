@@ -26,7 +26,29 @@ function displayTodo(todo) {
   containerTask.appendChild(containerTodo);
   containerTodo.innerHTML = todo.txt;
   containerTodo.className = "todo";
-  addBtnMod(containerTodo);
-  addBtnSup(containerTodo);
-  addBtnEnd(containerTodo);
+  addBtnEnd(containerTodo, todo.id);
+  addBtnMod(containerTodo, todo.id);
+  addBtnSup(containerTodo, todo.id);
+}
+
+function addBtnEnd(containerTodo, id) {
+  const btnEnd = document.createElement("button");
+  containerTodo.appendChild(btnEnd);
+  btnEnd.className = "btn";
+  btnEnd.id = id;
+  btnEnd.innerHTML = '<i class="fa-solid fa-circle-minus"></i>';
+}
+function addBtnMod(containerTodo, id) {
+  const btnMod = document.createElement("button");
+  containerTodo.appendChild(btnMod);
+  btnMod.className = "btn";
+  btnMod.id = id;
+  btnMod.innerHTML = '<i class="fa-solid fa-pen-to-square"></i>';
+}
+function addBtnSup(containerTodo, id) {
+  const BtnSup = document.createElement("button");
+  containerTodo.appendChild(BtnSup);
+  BtnSup.className = "btn";
+  BtnSup.id = id;
+  BtnSup.innerHTML = '<i class="fa-solid fa-xmark"></i>';
 }

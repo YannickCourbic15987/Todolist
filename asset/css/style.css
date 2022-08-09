@@ -73,3 +73,20 @@ body {
   font-family: "Caveat", cursive;
   font-size: 35px;
 }
+.btn {
+  margin-left: 10px;
+  border: none;
+  background: none;
+}
+.fa-circle-minus {
+  font-size: 20px;
+  color: rgb(238, 169, 40);
+}
+.fa-pen-to-square {
+  font-size: 20px;
+  color: rgb(46, 138, 34);
+}
+.fa-xmark {
+  font-size: 20px;
+  color: rgb(151, 28, 28);
+}

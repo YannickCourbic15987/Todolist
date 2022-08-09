@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.todo-hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  margin-top: 2rem;
+  border-radius: 15px;
+  background-color: rgb(241, 241, 241);
+  width: 30%;
+  font-family: "Oleo Script Swash Caps", cursive;
+  height: fit-content;
+}
+.center-title {
+  display: flex;
+  justify-content: center;
+}
+.title {
+  color: rgb(0, 0, 0);
+  margin-bottom: 2px;
+  font-weight: 300;
+}
+.inline {
+  height: 3px;
+  width: 70%;
+  background-color: rgb(0, 0, 0);
+  margin: 0 auto;
+}
+.container-task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  gap: 1rem;
+}
+.task-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.input-rounded {
+  width: 250px;
+  border-radius: 15px;
+  height: 25px;
+  border: none;
+}
+.btn-plus {
+  border: none;
+  background: none;
+}
+.text-success {
+  color: rgb(3, 231, 125);
+  font-size: 25px;
+}
+.text-success:hover {
+  color: rgb(0, 204, 109);
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 1),
+    0px 0px 3px rgba(255, 255, 255, 1), 0px 0px 15px rgba(255, 255, 255, 1),
+    0px 0px 4px rgba(3, 231, 125, 0.5), 0px 0px 7px rgba(3, 231, 125, 0.5),
+    0px 0px 5px rgba(3, 231, 125, 0.5), 0px 0px 8px rgba(3, 231, 125, 0.5),
+    0px 0px 6px rgba(3, 231, 125, 0.5);
+}
+.todo {
+  font-family: "Caveat", cursive;
+  font-size: 35px;
+}

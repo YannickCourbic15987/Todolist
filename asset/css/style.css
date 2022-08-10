@@ -72,8 +72,20 @@ body {
 .todo {
   font-family: "Caveat", cursive;
   font-size: 35px;
+  margin: 5px; 
 }
-.btn {
+.btnEnd {
+  margin-left: 10px;
+  border: none;
+  background: none;
+}
+.btnMod {
+  margin-left: 10px;
+  border: none;
+  background: none;
+  
+}
+.btnRemove {
   margin-left: 10px;
   border: none;
   background: none;
@@ -89,4 +101,40 @@ body {
 .fa-xmark {
   font-size: 20px;
   color: rgb(151, 28, 28);
+}
+.containerTodo{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+
+
+}
+.lineThrough {
+  font-family: "Caveat", cursive;
+  font-size: 35px;
+  text-decoration:line-through;
+  color: red;
+}
+.hidden{
+  display: none;
+}
+.display{
+  width: 250px;
+  border-radius: 15px;
+  height: 25px;
+  border: none;
+  
+}
+
+.containerNewTodo{
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+#containerTodo{
+  width: 60vw;
+  background-color:rgb(216, 216, 216);
+  border-radius: 24px;
+
 }
